@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="96fa24ddc71f4ddaa73122b87f0963f8" Name="Diagram1" ZoomLevel="20">
+        <EntityTypeShape EntityType="SamoletikModel.Aircraft" Width="1.5" PointX="8.25" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="SamoletikModel.AircraftStatus" Width="1.5" PointX="6" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SamoletikModel.Airports" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="SamoletikModel.Booking" Width="1.5" PointX="7.5" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="SamoletikModel.BookingStatus" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SamoletikModel.Employee" Width="1.5" PointX="10.5" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SamoletikModel.Flights" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SamoletikModel.FlightSchedule" Width="1.5" PointX="10.5" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SamoletikModel.FlightStatus" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SamoletikModel.OperatingStatus" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SamoletikModel.Passengers" Width="1.5" PointX="5.25" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SamoletikModel.PaymentMethod" Width="1.5" PointX="10.5" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SamoletikModel.Payments" Width="1.5" PointX="12.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SamoletikModel.PaymentStatus" Width="1.5" PointX="10.5" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SamoletikModel.RoliEmployees" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <AssociationConnector Association="SamoletikModel.FK_Aircraft_AircraftStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SamoletikModel.FK_FlightSchedule_Aircraft" ManuallyRouted="false" />
+        <AssociationConnector Association="SamoletikModel.FK_Airports_OperatingStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SamoletikModel.FK_Flights_ArrivalAirport" ManuallyRouted="false" />
+        <AssociationConnector Association="SamoletikModel.FK_Flights_DepartureAirport" ManuallyRouted="false" />
+        <AssociationConnector Association="SamoletikModel.FK_Booking_BookingStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SamoletikModel.FK_Booking_Flights" ManuallyRouted="false" />
+        <AssociationConnector Association="SamoletikModel.FK_Booking_Passengers" ManuallyRouted="false" />
+        <AssociationConnector Association="SamoletikModel.FK_Payments_Booking" ManuallyRouted="false" />
+        <AssociationConnector Association="SamoletikModel.FK_Payments_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="SamoletikModel.FK_Flights_FlightStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SamoletikModel.FK_FlightSchedule_Flights" ManuallyRouted="false" />
+        <AssociationConnector Association="SamoletikModel.FK_Payments_PaymentMethod" ManuallyRouted="false" />
+        <AssociationConnector Association="SamoletikModel.FK_Payments_PaymentStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="SamoletikModel.fk" ManuallyRouted="true" >
+          <ConnectorPoint PointX="2.25" PointY="7.96875" />
+          <ConnectorPoint PointX="5.2200000000000006" PointY="7.96875" />
+          <ConnectorPoint PointX="5.2200000000000006" PointY="8.225825043072545" />
+          <ConnectorPoint PointX="8.1666666666666661" PointY="8.225825043072545" />
+          <ConnectorPoint PointX="8.3333333333333339" PointY="8.225825043072545" />
+          <ConnectorPoint PointX="10.041666666666666" PointY="8.225825043072545" />
+          <ConnectorPoint PointX="10.208333333333334" PointY="8.225825043072545" />
+          <ConnectorPoint PointX="11.25" PointY="8.225825043072545" />
+          <ConnectorPoint PointX="11.25" PointY="9.625" />
+        </AssociationConnector>
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
